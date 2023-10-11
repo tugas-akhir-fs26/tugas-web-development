@@ -14,20 +14,38 @@
   </head>
   <body>
     <!-- add email and pass -->
-    <input
-      type="text"
-      name=""
-      id="email_login"
-      placeholder="Masukkan email.."
-    /><br />
-    <input
-      type="password"
-      name=""
-      id="password_login"
-      placeholder="Masukkan Password.."
-    />
-    <div>
-      <button class="bg-primary" id="login">Login</button>
+    <div class="container">
+      <form style="height: 400px" class="align-middle">
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email_login"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password_login"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" id="login" class="btn btn-primary">Login</button>
+      </form>
+      <div>
+        <img src="gambarlogin.jpg" alt="" />
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
