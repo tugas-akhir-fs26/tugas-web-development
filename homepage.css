@@ -38,3 +38,21 @@
     color: black;
     border-radius: 5px;
 }
+
+/* 2.Hero Section */
+.text-main p{
+    font-size: 20px;
+}
+.text-logo span{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-img{
+    width: 600px;
+}
+
+.btn-hero{
+    width: 200px;
+    margin-top: 20px;
+}
