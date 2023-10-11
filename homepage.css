@@ -15,11 +15,25 @@
     font-weight: 700;
 }
 .main-logo{
-    color: blue;
+    color: #0460D9;
 }
 .navbar-container{
     display: flex;
     justify-content: space-between;
+}
+#active{
+    color: #0460D9;
+}
+.navbar-nav a:hover{
+    color: #0460D9;
+}
+
+.hero-ct{
+    height: 100vh;
+}
+
+.hero-ct .col-6{
+    margin-bottom: 100px;
 }
 
 .navbar-item ul{
@@ -55,4 +69,21 @@
 .btn-hero{
     width: 200px;
     margin-top: 20px;
+}
+
+/*2. Course Section */
+.course-title h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-ct{
+    width: 400px;
 }
