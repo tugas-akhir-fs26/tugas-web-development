@@ -15,36 +15,54 @@
   <body>
     <!-- add email and pass -->
     <div class="container">
-      <form style="height: 400px" class="align-middle">
-        <div class="mb-3">
-          <input
-            type="email"
-            class="form-control"
-            id="email_login"
-            placeholder="Email"
-            required
-          />
+      <div class="container d-flex">
+        <div class="container-form">
+          <form style="height: 400px" class="align-middle">
+            <div class="mb-3">
+              <div class="logo">
+                <a href="">Skill<span class="logomastery">Mastery</span></a>
+              </div>
+
+              <input
+                type="email"
+                class="form-control"
+                id="email_login"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"></label>
+              <input
+                type="password"
+                class="form-control"
+                id="password_login"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Ingatkan saya</label
+              >
+            </div>
+
+            <div class="daftaruser">
+              <button type="submit" id="login" class="btn btn-primary">
+                Login
+              </button>
+              <p>Belum punya akun? <a class="daftar" id="daftar">Daftar</a></p>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="password_login"
-            placeholder="Password"
-            required
-          />
+        <div class="gambarLogin">
+          <img src="gambarlogin.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
-        </div>
-        <button type="submit" id="login" class="btn btn-primary">Login</button>
-      </form>
-      <div>
-        <img src="gambarlogin.jpg" alt="" />
       </div>
     </div>
   </body>

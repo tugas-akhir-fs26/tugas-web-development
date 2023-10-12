@@ -10,6 +10,6 @@ login.addEventListener("click", function () {
   let password_login = document.getElementById("password_login").value;
 
   if (email_login == baseData.email && password_login == baseData.password) {
-    alert("Selamat datang");
+    alert("welcome");
   }
 });
