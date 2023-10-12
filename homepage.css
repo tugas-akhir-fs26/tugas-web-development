@@ -78,6 +78,7 @@
 }
 
 .card-wrapper{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,3 +88,12 @@
 .card-ct{
     width: 400px;
 }
+
+.cr-container{
+    height: 100vh;
+}
+
+.btn-cr {
+    width: 200px;
+}
+
