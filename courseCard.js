@@ -5,7 +5,6 @@ async function getDataCourse() {
     let URL = "https://65275100917d673fd76d901a.mockapi.io/list-course";
     let response = await fetch(URL);
     let data = await response.json();
-    console.log(data);
 
     data.map((course) => {
       let card = `

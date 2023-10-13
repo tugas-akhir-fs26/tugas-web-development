@@ -2,10 +2,13 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
 }
 
+.container .txt-title{
+    color: #0460D9;
+}
 /* 1.Navbar */
 .logo{
     display: flex;
@@ -98,3 +101,29 @@
     width: 200px;
 }
 
+/* 3. Testimoni Section */
+.testi-ct{
+    height: 100vh;
+}
+
+.testi-logo{
+    color: #0460D9;
+}
+
+.testi-logo_2, .testi-logo{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.testi-img{
+    width: 300px;
+}
+
+.test-ct{
+    width: 300px;
+}
+
+.card-testi{
+    display: flex;
+    gap:20px
+}
