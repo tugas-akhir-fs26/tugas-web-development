@@ -107,6 +107,8 @@
 /* 3. Testimoni Section */
 .testi-ct{
     height: 100vh;
+    /* background-color: #8DC3F2; */
+    z-index: -2;
 }
 
 .testi-logo{
@@ -123,11 +125,13 @@
 }
 
 .testi-card{
-    width: 300px;
+    width: 600px;
+    height: 500px;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
     text-align: center;
+    /* background-color: red; */
 }
 
 .card-ts-wrapper{
@@ -138,7 +142,10 @@
     width:100vw;
 }
 
-
+.carousel-inner{
+    /* background-color: #8DC3F2; */
+    z-index: -1;
+}
 .card-ts-wrapper .testi-card .img-wrapper_testi {
     position: relative;
 }
@@ -148,14 +155,30 @@
     z-index: 1;
     overflow: hidden;
 }
-.card-ts-wrapper .testi-card .img-wrapper_testi .circle_testi{
+.testi-card .img-wrapper_testi .circle_testi{
     position: absolute;
     width: 300px;
     height: 300px;
     background-color: #0460D9;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
     bottom: 0;
+    left: 150px;
     border-radius: 50%;
     z-index: -1;
+}
+
+.card-info_body{
+    margin-top: 20px;
+}
+
+.card-text{
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.card-info_body .card-author{
+    color: #0460D9;
+    font-weight: 700;
 }
 
 /* RESPONSIVE */
