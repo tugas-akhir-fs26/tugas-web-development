@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="homepage.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -64,7 +64,7 @@
     <div class="container">
       <!--Start Main section -->
       <div class="row align-items-center p-2 hero-ct">
-        <div class="col-6">
+        <div class="col-xl-6 mt-5">
           <div class="text-main">
             <div class="text-logo">
               <span class="main-logo">Skill</span>
@@ -87,13 +87,9 @@
             </form>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-xl-6 mt-4">
           <div class="img-circle"></div>
-          <img
-            src="image/BG.svg"
-            alt="background-hero"
-            class="img-fluid hero-img"
-          />
+          <img src="image/BG.svg" alt="background-hero" class="hero-img" />
         </div>
       </div>
       <!-- End Main section -->
@@ -102,20 +98,24 @@
       <div class="container cr-container">
         <div class="row align-items-center p-3 mt-5">
           <div
-            class="col-12 d-flex flex-column align-items-center justify-content-center course-title"
+            class="col-md-12 d-flex flex-column align-items-center justify-content-center course-title"
           >
             <h2 class="h1 txt-title">Kursus</h2>
             <p class="h4">Temukan Kursus Menarik Disini</p>
           </div>
         </div>
         <div class="row">
-          <div class="card-wrapper mt-4 card-main" id="card-ct">
-            <!-- card dirender disini -->
+          <div class="col-md-12">
+            <div class="card-wrapper mt-4 card-main" id="card-ct">
+              <!-- card dirender disini -->
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col d-flex justify-content-center align-items-center">
-            <button type="button" class="btn btn-primary px-3 py-2 btn-cr mt-5">
+          <div
+            class="col-md-12 d-flex justify-content-center align-items-center"
+          >
+            <button type="button" class="btn btn-primary px-3 py-2 btn-cr mt-4">
               Semua Kursus
             </button>
           </div>
@@ -125,9 +125,9 @@
 
       <!-- Start Testimoni Section -->
       <div class="container testi-ct">
-        <div class="row bg-info">
+        <div class="row">
           <div
-            class="col-12 d-flex flex-column align-items-center justify-content-center course-title"
+            class="col-md-12 d-flex flex-column align-items-center justify-content-center course-title"
           >
             <h2 class="h1 txt-title">Testimoni</h2>
             <p class="h4">
@@ -138,22 +138,132 @@
           </div>
 
           <div
-            class="col-12 d-flex flex-column align-items-center justify-content-center"
+            class="col-md-12 d-flex flex-column align-items-center justify-content-center mt-5"
           >
-            <div class="card-testi" id="testi-ct">
-              <!-- render testimoni card disini -->
+            <div
+              id="carouselExampleIndicators"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+
+                  <!-- RENDER CARD TESTIMONI-->
+                  <div class="card-ts-wrapper">
+                    <div class="testi-card">
+                      <div class="img-wrapper_testi">
+                        <img
+                          src="image/testimoni/testi_5.png"
+                          class="testi-img"
+                          alt="testimoni"
+                        />
+                        <div class="circle_testi"></div>
+                      </div>
+                      <div class="card-body">
+                        <span class="card-author">Dionisius Reinaldo</span>
+                        <p class="card-text">Keren</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- END RENDER CARD TESTIMONI -->
+                </div>
+                <div class="carousel-item">
+                  <div class="card-ts-wrapper">
+                    <div class="testi-card">
+                      <div class="img-wrapper_testi">
+                        <img
+                          src="image/testimoni/testi_4.png"
+                          class="testi-img"
+                          alt="testimoni"
+                        />
+                        <div class="circle_testi"></div>
+                      </div>
+                      <div class="card-body">
+                        <span class="card-author">Dionisius Reinaldo</span>
+                        <p class="card-text">Keren</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-ts-wrapper">
+                    <div class="testi-card">
+                      <div class="img-wrapper_testi">
+                        <img
+                          src="image/testimoni/testi_3.png"
+                          class="testi-img"
+                          alt="testimoni"
+                        />
+                        <div class="circle_testi"></div>
+                      </div>
+                      <div class="card-body">
+                        <span class="card-author">Dionisius Reinaldo</span>
+                        <p class="card-text">Keren</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
       <!-- End Testimoni Section -->
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
     <script src="courseCard.js"></script>
-    <script src="testiCard.js"></script>
+    <!-- <script src="testiCard.js"></script> -->
   </body>
 </html>

@@ -11,7 +11,7 @@ async function getDataTesti() {
     data.map((testi) => {
       let card = `
             <div class="card test-ct mt-4">
-            <img src="${testi.avatar}" class="testi-img" alt="${testi.name}" />
+            <img src="${testi.img}" class="testi-img" alt="${testi.name}" />
             <div class="card-body">
               <span class="card-author">${testi.name}</span>
               <p class="card-text">

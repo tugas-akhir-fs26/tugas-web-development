@@ -33,6 +33,8 @@
 
 .hero-ct{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-ct .col-6{
@@ -74,7 +76,8 @@
     margin-top: 20px;
 }
 
-/*2. Course Section */
+
+/*3. Course Section */
 .course-title h2{
     font-size: 32px;
     font-weight: 700;
@@ -119,11 +122,80 @@
     width: 300px;
 }
 
-.test-ct{
+.testi-card{
     width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-.card-testi{
+.card-ts-wrapper{
     display: flex;
-    gap:20px
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+
+
+.card-ts-wrapper .testi-card .img-wrapper_testi {
+    position: relative;
+}
+
+.card-ts-wrapper .testi-card .img-wrapper_testi img{
+    border-radius: 0px 0px 180px 180px;
+    z-index: 1;
+    overflow: hidden;
+}
+.card-ts-wrapper .testi-card .img-wrapper_testi .circle_testi{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #0460D9;
+    bottom: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width : 786px) {
+
+    .hero-ct{
+        text-align: center;
+    }
+    .hero-img{
+        width: 300px;
+    }
+
+    .btn-hero{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .cr-container{
+        height: auto;
+    }
+
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-ct{
+        width: 300px;
+        
+    }
+
+    .btn-cr{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .testi-ct{
+        height: auto;
+        text-align: center;
+    }
+    
 }
