@@ -32,9 +32,8 @@
 }
 
 .hero-ct{
+    width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .hero-ct .col-6{
@@ -68,7 +67,7 @@
 }
 
 .hero-img{
-    width: 600px;
+    width: 500px;
 }
 
 .btn-hero{
@@ -107,7 +106,6 @@
 /* 3. Testimoni Section */
 .testi-ct{
     height: 100vh;
-    /* background-color: #8DC3F2; */
     z-index: -2;
 }
 
@@ -125,7 +123,7 @@
 }
 
 .testi-card{
-    width: 600px;
+    width: 500px;
     height: 500px;
     align-items: center;
     justify-content: center;
@@ -139,7 +137,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    width:50em;
 }
 
 .carousel-inner{
@@ -162,7 +160,7 @@
     background-color: #0460D9;
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
     bottom: 0;
-    left: 150px;
+    left: 100px;
     border-radius: 50%;
     z-index: -1;
 }
@@ -187,7 +185,7 @@
 }
 .bai-img-wrapper img{
     width: 400px;
-    border-radius: 0px 0px 200px 200px;
+    border-radius: 0px 0px 190px 190px;
     z-index: 1;
     overflow: hidden;
 }
@@ -195,12 +193,11 @@
 .bai-img-wrapper .circle_testi{
     position: absolute;
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     background-color: #0460D9;
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
     bottom: 0;
-    /* left: 150px; */
     border-radius: 50%;
     z-index: -1;
 }
@@ -221,7 +218,61 @@
 
 /* RESPONSIVE */
 
+@media only screen and (max-width : 480px)  {
+    .navbar-container{
+        text-align: center;
+        display: flex;
+        
+    }
+
+    .btn-nav{
+        align-items: center;
+        justify-content: center;
+    }
+    .bai-img-wrapper .circle_testi{
+        width: 260px;
+        height: 260px;
+        position: absolute;
+    }
+
+    .bai-img-wrapper img{
+        width: 260px;
+        border-radius: 0px 0px 250px 250px;
+    }
+    
+    .hero-ct button{
+        margin-top: 30px;
+    }
+
+    .carousel-inner{
+        height: 100vh;
+        text-align: center;
+    }
+
+    .testi-card{
+        width: 100%;
+        padding: 50px;
+    }
+
+    .testi-card .img-wrapper_testi .circle_testi{
+        width: 300px;
+        height: 300px;
+        left: 0;
+        right: 0;
+    }
+}
+
 @media only screen and (max-width : 786px) {
+    .navbar-container{
+        text-align: center;
+        display: flex;
+        
+    }
+
+    .btn-nav{
+        align-items: center;
+        justify-content: center;
+    }
 
     .hero-ct{
         text-align: center;
@@ -258,5 +309,20 @@
         height: auto;
         text-align: center;
     }
-    
+
+    .bai-ct{
+        text-align: center;
+    }
+    .bai-img-wrapper img{
+        width: 300px;
+        height: 300px;
+    }
+    .bai-img-wrapper .circle_testi{
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-ts-wrapper{
+        width:30em;
+    }
 }
