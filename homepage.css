@@ -215,7 +215,46 @@
     margin-top: 20px;
     width: 300px;
 }
+/* FOOTER */
+.footer-ct{
+    height: 200px;
+    padding: 20px;
+    background-color: #8DC3F2;
+}
+.footer-logo span{
+    font-size: 48px;
+    font-weight: 700;
+}
 
+.team{
+    font-size: 20px;
+}
+.footer-icon{
+    gap: 20px;
+}
+.footer-icon svg{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.footer-link{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: white;
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width : 480px)  {
@@ -324,5 +363,9 @@
 
     .card-ts-wrapper{
         width:30em;
+    }
+
+    .testi-ct .testi-subhead, .testi-subhead span{
+        font-size: 22px;
     }
 }
