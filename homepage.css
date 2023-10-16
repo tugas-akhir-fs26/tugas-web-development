@@ -299,6 +299,17 @@
         left: 0;
         right: 0;
     }
+
+    .footer-ct{
+        height: 400px;
+    }
+
+    .footer-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media only screen and (max-width : 786px) {
@@ -367,5 +378,16 @@
 
     .testi-ct .testi-subhead, .testi-subhead span{
         font-size: 22px;
+    }
+
+    .footer-ct{
+        height: 400px;
+    }
+
+    .footer-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
