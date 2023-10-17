@@ -1,8 +1,8 @@
 // Fungsi untuk memvalidasi nama sebelum mendaftar
 function validateName() {
-  var nameInput = document.getElementById('name');
-  var nameError = document.getElementById('name-error');
-  var name = nameInput.value;
+  const nameInput = document.getElementById('name');
+  const nameError = document.getElementById('name-error');
+  const name = nameInput.value;
 
   if (name.trim() === '') {
     nameError.textContent = 'Nama harus diisi';
@@ -15,13 +15,13 @@ function validateName() {
 }
 
 // Menggunakan event listener untuk memanggil fungsi validasi saat input nama kehilangan fokus
-var nameInput = document.getElementById('name');
+const nameInput = document.getElementById('name');
 nameInput.addEventListener('blur', validateName);
 
 // Fungsi yang digunakan untuk membatasi jumlah karakter saat menginput nama
 function limitNameLength(input, maxLength) {
-  var name = input.value;
-  var nameError = document.getElementById('name-error');
+  const name = input.value;
+  const nameError = document.getElementById('name-error');
 
   if (name.length > maxLength) {
     nameError.textContent = 'Sudah melebihi 35 karakter';
@@ -34,10 +34,10 @@ function limitNameLength(input, maxLength) {
 
 // Fungsi untuk melakukan validasi email sebelum mendaftar
 function validateEmail() {
-  var emailInput = document.getElementById('email');
-  var emailError = document.getElementById('email-error');
-  var email = emailInput.value;
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const emailInput = document.getElementById('email');
+  const emailError = document.getElementById('email-error');
+  const email = emailInput.value;
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   if (email.trim() === '') {
     emailError.textContent = 'Email harus diisi';
     emailError.style.display = 'block';
@@ -48,20 +48,29 @@ function validateEmail() {
     return false;
   }
 
+  const users = fetch('https://6528c37e931d71583df26ee3.mockapi.io/users')
+    .then((res) => res.json())
+    .then((res) => {
+      const exist = res.find((u) => u.email === email);
+      if (exist) {
+        alert('Email sudah terdaftar');
+      }
+    });
+
   emailError.style.display = 'none';
   return true;
 }
 
 // Menggunakan event listener untuk memanggil fungsi validasi saat input email kehilangan fokus
-var emailInput = document.getElementById('email');
+const emailInput = document.getElementById('email');
 emailInput.addEventListener('blur', validateEmail);
 
 // Fungsi untuk melakukan validasi password sebelum mendaftar
 function validatePassword() {
-  var passwordInput = document.getElementById('password');
-  var passwordError = document.getElementById('password-error');
-  var password = passwordInput.value;
-  var passwordPattern = /^(?=.*[a-zA-Z])(?=.*\d)/;
+  const passwordInput = document.getElementById('password');
+  const passwordError = document.getElementById('password-error');
+  const password = passwordInput.value;
+  const passwordPattern = /^(?=.*[a-zA-Z])(?=.*\d)/;
   if (password.trim() === '') {
     passwordError.textContent = 'Password harus diisi';
     passwordError.style.display = 'block';
@@ -77,18 +86,18 @@ function validatePassword() {
 }
 
 // Menggunakan event listener untuk memanggil fungsi validasi saat input password kehilangan fokus
-var passwordInput = document.getElementById('password');
+const passwordInput = document.getElementById('password');
 passwordInput.addEventListener('blur', validatePassword);
 
 // Fungsi untuk membuka modal
 function openModal(modalId) {
-  var modal = document.getElementById(modalId);
+  const modal = document.getElementById(modalId);
   modal.style.display = 'block';
 }
 
 // Fungsi untuk menutup modal
 function closeModal() {
-  var modals = document.querySelectorAll('.modal');
+  const modals = document.querySelectorAll('.modal');
   modals.forEach(function (modal) {
     modal.style.display = 'none';
   });
@@ -96,9 +105,9 @@ function closeModal() {
 
 // Validasi data kosong sebelum pendaftaran
 document.querySelector('.btn').addEventListener('click', function () {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
   if (name === '' || email === '' || password === '') {
     openModal('incompleteDataModal');
@@ -107,13 +116,23 @@ document.querySelector('.btn').addEventListener('click', function () {
   } else if (!validatePassword()) {
     return;
   } else {
+    fetch('https://6528c37e931d71583df26ee3.mockapi.io/users', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, password }),
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
     openModal('successModal');
   }
 });
 
 // Fungsi ikon mata pada password
 function eyechange() {
-  var x = document.getElementById('password').type;
+  const x = document.getElementById('password').type;
 
   if (x == 'password') {
     document.getElementById('password').type = 'text';
@@ -133,8 +152,8 @@ function eyechange() {
 }
 
 // Ketika akun sudah berhasil didaftarkan maka akan dialihkan ke fitur login
-function openLogin() {
+function openHomepage() {
   window.location.href = 'index.html';
 }
-document.getElementById('openLogin').addEventListener('click', openLogin);
+document.getElementById('openHomepage').addEventListener('click', openHomepage);
 //
