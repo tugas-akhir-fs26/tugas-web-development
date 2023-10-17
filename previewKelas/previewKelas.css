@@ -195,3 +195,7 @@ a {
   background-color: rgb(255, 102, 47);
   transition: 0.3s;
 }
+
+.price-old {
+  color: rgb(109, 109, 109);
+}
