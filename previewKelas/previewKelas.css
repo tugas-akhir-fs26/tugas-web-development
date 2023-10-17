@@ -173,16 +173,7 @@ a {
 .course-sidebar .features-list li {
   position: relative;
   padding-left: 21px;
-  margin-bottom: 8px;
-}
-
-.course-sidebar .features-list li::before {
-  content: "";
-  height: 6px;
-  width: 6px;
-  background-color: orange;
-  position: absolute;
-  left: 0;
+  margin-bottom: 5px;
 }
 
 /* btn */
