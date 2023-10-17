@@ -48,10 +48,17 @@
               <button type="button" class="btn">Daftar</button>
               <div id="successModal" class="modal">
                 <div class="modal-content">
-                  <span class="success-close" onclick="closeModal()">&times;</span>
+                  <!-- <span class="success-close" onclick="closeModal()">&times;</span> -->
+                  <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="51.0002" cy="51.0002" r="51.0002" fill="#F5F8FF" />
+                    <path
+                      d="M46.0054 58.8418C44.8339 60.0134 42.9344 60.0134 41.7628 58.8418L35.5818 52.6608C34.6647 51.7437 33.1779 51.7437 32.2608 52.6608C31.3438 53.5778 31.3438 55.0647 32.2608 55.9817L41.7628 65.4837C42.9344 66.6553 44.8339 66.6553 46.0054 65.4837L70.6889 40.8003C71.6059 39.8832 71.6059 38.3964 70.6889 37.4793C69.7718 36.5623 68.285 36.5623 67.3679 37.4793L46.0054 58.8418Z"
+                      fill="#199A8E"
+                    />
+                  </svg>
                   <h2>Berhasil!</h2>
                   <p>Akun Anda telah berhasil Didaftarkan</p>
-                  <button type="button" class="success-button">Masuk</button>
+                  <button type="button" class="success-button" id="openLogin">Masuk</button>
                 </div>
               </div>
               <div id="incompleteDataModal" class="modal">

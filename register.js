@@ -1,4 +1,4 @@
-// Fungsi untuk melakukan validasi nama sebelum mendaftar
+// Fungsi untuk memvalidasi nama sebelum mendaftar
 function validateName() {
   var nameInput = document.getElementById('name');
   var nameError = document.getElementById('name-error');
@@ -18,6 +18,7 @@ function validateName() {
 var nameInput = document.getElementById('name');
 nameInput.addEventListener('blur', validateName);
 
+// Fungsi yang digunakan untuk membatasi jumlah karakter saat menginput nama
 function limitNameLength(input, maxLength) {
   var name = input.value;
   var nameError = document.getElementById('name-error');
@@ -110,34 +111,6 @@ document.querySelector('.btn').addEventListener('click', function () {
   }
 });
 
-// Fungsi untuk memeriksa apakah email sudah digunakan
-function isEmailAlreadyUsed(email) {
-  // Gantilah bagian ini dengan logika yang sesuai dengan mock API atau database Anda
-  // Contoh: Anda memiliki array email yang berisi email yang sudah terdaftar
-  var registeredEmails = ['email1@example.com', 'email2@example.com', 'email3@example.com'];
-
-  // Periksa apakah email sudah ada di dalam daftar
-  return registeredEmails.includes(email);
-}
-
-// Fungsi untuk menampilkan notifikasi bahwa email telah digunakan
-function showEmailUsedNotification() {
-  var emailInput = document.getElementById('email');
-  var emailError = document.getElementById('email-error');
-  var email = emailInput.value;
-
-  if (isEmailAlreadyUsed(email)) {
-    emailError.textContent = 'Email telah digunakan';
-    emailError.style.display = 'block';
-  }
-  // Tambahan: tambahkan kode di sini untuk menyembunyikan pesan kesalahan jika diperlukan
-  // Misalnya, jika pengguna mengoreksi email yang salah.
-}
-
-// Menggunakan event listener untuk memanggil fungsi notifikasi saat input email kehilangan fokus
-var emailInput = document.getElementById('email');
-emailInput.addEventListener('blur', showEmailUsedNotification);
-
 // Fungsi ikon mata pada password
 function eyechange() {
   var x = document.getElementById('password').type;
@@ -158,3 +131,10 @@ function eyechange() {
   </svg>`;
   }
 }
+
+// Ketika akun sudah berhasil didaftarkan maka akan dialihkan ke fitur login
+function openLogin() {
+  window.location.href = 'index.html';
+}
+document.getElementById('openLogin').addEventListener('click', openLogin);
+//
