@@ -3,6 +3,9 @@
   padding: 20px;
 }
 
+#box {
+  padding: 20px;
+}
 ul li {
   list-style: none;
 }
@@ -57,4 +60,38 @@ a {
   background-color: transparent;
   color: var(--black-90);
   font-weight: 300;
+}
+
+.course-description h4 {
+  font-size: 16px;
+}
+
+/* course description */
+
+.course-instructor .img-box img {
+  max-width: 128px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.course-instructor h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.course-instructor h4 {
+  font-weight: 300;
+}
+
+.course-instructor ul li i {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+.course-instructor ul li i:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* course reviews */
+.progress {
+  margin-bottom: 10px;
 }
