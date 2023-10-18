@@ -188,6 +188,10 @@ button#closeButton:hover {
   cursor: pointer;
 }
 
+.btn-regis{
+  text-decoration: none;
+  color: white;
+}
 /* Aturan CSS standar di sini */
 
 /* Aturan CSS responsif untuk lebar layar <= 768px */
