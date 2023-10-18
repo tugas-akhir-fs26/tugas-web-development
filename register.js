@@ -53,7 +53,8 @@ function validateEmail() {
     .then((res) => {
       const exist = res.find((u) => u.email === email);
       if (exist) {
-        alert('Email sudah terdaftar');
+        emailError.textContent = 'Email telah terdaftar';
+        emailError.style.display = 'block';
       }
     });
 
