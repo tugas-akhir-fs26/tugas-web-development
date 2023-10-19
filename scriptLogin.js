@@ -8,7 +8,7 @@ async function fetchDataFromAPI() {
       throw new Error("Gagal mengambil data dari API");
     }
 
-    const data = await response.json();
+    const data = await response.json()
     return data;
   } catch (error) {
     console.error("Terjadi kesalahan:", error);
@@ -28,7 +28,8 @@ async function authenticate(email, password) {
 
     if (matchingUser) {
       alert("Login Berhasil");
-      localStorage.setItem(email);
+      localStorage.setItem("email", email);
+      window.location.href = "index.html"
       // Lakukan tindakan selanjutnya setelah login berhasil
     } else {
       alert("Login gagal");
