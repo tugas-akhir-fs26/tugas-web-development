@@ -145,7 +145,6 @@
     width: 100%;
 }
 
-
 /* MAIN CONTAINER */
 
 
@@ -189,6 +188,8 @@
     .card-payment{
         margin-top: 40px;
     }
+
+    
 }
 
 @media only screen and (max-width : 786px) {

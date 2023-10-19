@@ -47,7 +47,7 @@ async function getCourseId() {
               <span class="h6">Total Harga </span>
               <span class="h5 text-primary">Rp.${detail.price}</span>
             </div>
-            <button class="btn btn-primary">Bayar</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Bayar</button>
             <div class="payment">
               <div class="line mt-3 mb-3"></div>
               <span class="h5">Metode Pembayaran</span>
@@ -68,4 +68,8 @@ async function getCourseId() {
   }
 }
 
+
+function buyCourseHandler(){
+  
+}
 getCourseId();
