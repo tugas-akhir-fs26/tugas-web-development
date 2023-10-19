@@ -1,0 +1,64 @@
+/* Hahah test 1 2 3 */
+.container {
+  height: 100vh;
+  align-items: center;
+}
+
+.logo {
+  color: #0460d9;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logomastery {
+  color: black;
+}
+
+.container-form {
+  width: 50%;
+}
+
+.container-form #email_login {
+  width: 100%;
+}
+
+.container-form #password_login {
+  width: 100%;
+}
+
+.gambarLogin {
+  height: auto;
+}
+
+.daftaruser {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.daftaruser p {
+  padding-top: 20px;
+}
+
+#login {
+  padding: 10px 30px 10px 30px;
+}
+
+@media (max-width: 768px) {
+  .gambarLogin img {
+    display: none;
+  }
+
+  .container-form {
+    width: 75%;
+  }
+
+  .daftaruser {
+    text-align: left;
+  }
+}

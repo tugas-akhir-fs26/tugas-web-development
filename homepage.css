@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container .txt-title{
+    color: #0460D9;
+}
+/* 1.Navbar */
+.logo{
+    display: flex;
+}
+.logo span{
+    font-size: 32px;
+    font-weight: 700;
+}
+.main-logo{
+    color: #0460D9;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+}
+#active{
+    color: #0460D9;
+}
+.navbar-nav a:hover{
+    color: #0460D9;
+}
+
+.hero-ct{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-ct .col-6{
+    margin-bottom: 100px;
+}
+
+.navbar-item ul{
+    display: flex;
+    gap: 50px;
+}
+.btn-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.btn-nav a{
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+#btn-avatar{
+    display: none;
+}
+/* 2.Hero Section */
+.text-main p{
+    font-size: 20px;
+}
+.text-logo span{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-img{
+    width: 500px;
+}
+
+.btn-hero{
+    width: 200px;
+    margin-top: 20px;
+}
+
+
+/*3. Course Section */
+.course-title h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-ct{
+    width: 400px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.cr-container{
+    height: 100vh;
+}
+
+.btn-cr {
+    width: 200px;
+}
+
+/* 3. Testimoni Section */
+.testi-ct{
+    height: 100vh;
+    z-index: -2;
+}
+
+.testi-logo{
+    color: #0460D9;
+}
+
+.testi-logo_2, .testi-logo{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.testi-img{
+    width: 300px;
+}
+
+.testi-card{
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.card-ts-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50em;
+}
+
+.carousel-inner{
+    /* background-color: #8DC3F2; */
+    z-index: -1;
+}
+.card-ts-wrapper .testi-card .img-wrapper_testi {
+    position: relative;
+}
+
+.card-ts-wrapper .testi-card .img-wrapper_testi img{
+    border-radius: 0px 0px 180px 180px;
+    z-index: 1;
+    overflow: hidden;
+}
+.testi-card .img-wrapper_testi .circle_testi{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #0460D9;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    left: 100px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.card-info_body{
+    margin-top: 20px;
+}
+
+.card-text{
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.card-info_body .card-author{
+    color: #0460D9;
+    font-weight: 700;
+}
+
+/* BAI */
+.bai-img-wrapper{
+   position: relative;
+}
+.bai-img-wrapper img{
+    width: 400px;
+    border-radius: 0px 0px 190px 190px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bai-img-wrapper .circle_testi{
+    position: absolute;
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: #0460D9;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.bai-logo span{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.p-bai{
+    font-size: 32px;
+}
+
+.btn-bai{
+    margin-top: 20px;
+    width: 300px;
+}
+/* FOOTER */
+.footer-ct{
+    height: 200px;
+    padding: 20px;
+    background-color: #8DC3F2;
+}
+.footer-logo span{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.team{
+    font-size: 20px;
+}
+.footer-icon{
+    gap: 20px;
+}
+.footer-icon svg{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.footer-link{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: white;
+}
+/* RESPONSIVE */
+
+@media only screen and (max-width : 480px)  {
+    .navbar-container{
+        text-align: center;
+        display: flex;
+        
+    }
+
+    .btn-nav{
+        align-items: center;
+        justify-content: center;
+    }
+    .bai-img-wrapper .circle_testi{
+        width: 260px;
+        height: 260px;
+        position: absolute;
+    }
+
+    .bai-img-wrapper img{
+        width: 260px;
+        border-radius: 0px 0px 250px 250px;
+    }
+    
+    .hero-ct button{
+        margin-top: 30px;
+    }
+
+    .carousel-inner{
+        height: 100vh;
+        text-align: center;
+    }
+
+    .testi-card{
+        width: 100%;
+        padding: 50px;
+    }
+
+    .testi-card .img-wrapper_testi .circle_testi{
+        width: 300px;
+        height: 300px;
+        left: 0;
+        right: 0;
+    }
+
+    .footer-ct{
+        height: 400px;
+    }
+
+    .footer-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width : 786px) {
+    .navbar-container{
+        text-align: center;
+        display: flex;
+        
+    }
+
+    .btn-nav{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-ct{
+        text-align: center;
+    }
+    .hero-img{
+        width: 300px;
+    }
+
+    .btn-hero{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .cr-container{
+        height: auto;
+    }
+
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-ct{
+        width: 300px;
+        
+    }
+
+    .btn-cr{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .testi-ct{
+        height: auto;
+        text-align: center;
+    }
+
+    .bai-ct{
+        text-align: center;
+    }
+    .bai-img-wrapper img{
+        width: 300px;
+        height: 300px;
+    }
+    .bai-img-wrapper .circle_testi{
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-ts-wrapper{
+        width:30em;
+    }
+
+    .testi-ct .testi-subhead, .testi-subhead span{
+        font-size: 22px;
+    }
+
+    .footer-ct{
+        height: 400px;
+    }
+
+    .footer-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
