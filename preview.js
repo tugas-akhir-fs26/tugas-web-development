@@ -1,3 +1,4 @@
+// @ts-nocheck
 const cardContainer = document.getElementById("card-ct");
 const author = document.getElementById('author')
 const instruktur = document.getElementById('instruktur')
