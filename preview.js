@@ -1,4 +1,17 @@
 const cardContainer = document.getElementById("card-ct");
+const author = document.getElementById('author')
+const instruktur = document.getElementById('instruktur')
+const courseTitle = document.getElementById('judul-course')
+const courseImg = document.getElementById('img-tb')
+const coursePrice = document.getElementById('price')
+const courseTarget = document.getElementById('target')
+const courseDeskripsi = document.getElementById('deskripsi')
+const courseReason = document.getElementById('alasan')
+const authorCourse = document.getElementById('course')
+const authorDetail = document.getElementById('info-ins')
+
+courseImg.style.width="400px"
+courseImg.style.textAlign="center"
 
 async function getDataCourse() {
   try {
@@ -10,10 +23,27 @@ async function getDataCourse() {
       const id = urlParams.get("id");
       return d.id === id;
     });
-    console.log(detail);
+    author.innerHTML = detail.author
+    authorCourse.innerHTML = detail.title
+    instruktur.innerHTML = detail.author
+    courseTitle.innerHTML = detail.title
+    courseImg.src=detail.img
+    coursePrice.innerHTML=`Rp.${detail.price}`
+    courseDeskripsi.innerHTML= detail.deskripsi
+    courseTarget.innerHTML= detail.target
+    courseReason.innerHTML=detail.alasan
+    authorDetail.innerHTML = detail.info
+
+   
+    
   } catch (err) {
     console.log(err);
   }
 }
 
+function paymentHandler(){
+  if (localStorage.getItem("email")) {
+    
+  }
+}
 getDataCourse();

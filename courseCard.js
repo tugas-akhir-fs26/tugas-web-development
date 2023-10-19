@@ -26,7 +26,7 @@ async function getDataCourse() {
                 Rp.${course.price}
                 </h5>
               </div>
-              <a href="preview.html?id=${course.id}" class="btn btn-primary">Detail Kelas</a>
+              <a href="./previewKelas/preview-kelas.html?id=${course.id}" class="btn btn-primary">Detail Kelas</a>
             </div>
           </div>`;
 
