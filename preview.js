@@ -42,8 +42,13 @@ async function getDataCourse() {
 }
 
 function paymentHandler(){
+  console.log("dari button");
   if (localStorage.getItem("email")) {
-    
+    window.location.href = "payment.html"
+  } else {
+    if (confirm("Anda belum Login silahkan login terlebih dahulu")){
+      window.location.href = "login.html"
+    } 
   }
 }
 getDataCourse();
