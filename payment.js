@@ -13,7 +13,7 @@ async function getCourseId() {
       return d.id === id;
     });
     let item = `
-      <div class="course-detail d-flex justify-content-center align-items-start p-4">
+      <div class="course-detail p-4">
       <img src=${detail.img} alt="" width="250px" />
       <div class="txt-deskripsi d-flex flex-column justify-content-center align-items-start">
         <h3 class="h4">${detail.title}</h3>
