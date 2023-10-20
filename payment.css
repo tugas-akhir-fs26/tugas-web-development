@@ -171,10 +171,6 @@
     gap: 20px;
   }
 
-  .card-payment {
-    margin-top: 40px;
-  }
-
   .course-detail .txt-deskripsi {
     width: 100%;
     height: 650px;
@@ -200,6 +196,11 @@
   .main-ct .ct-card{
     height: auto;
   }
+
+  .card-payment {
+    margin-top: 20px;
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 786px) {
@@ -223,33 +224,34 @@
     flex-direction: column;
     gap: 20px;
   }
-  .card-ct {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  .course-detail .txt-deskripsi {
+    width: 100%;
+    height: 650px;
+    /* background-color: red; */
   }
-  .course-detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  .card-ct .course-detail {
+    width: 100%;
     height: 100vh;
-    margin: auto;
-  }
-  .txt-deskripsi {
-    width: 300px;
-  }
-  .ct-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-ct .ct-card{
+    height: auto;
   }
 
   .main-ct {
     height: 100vh;
+    overflow-y: auto;
   }
 
-  .card-payment {
+  .container-sidebar .card-payment {
     margin-top: 20px;
+    width: auto;
   }
+
 }

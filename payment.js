@@ -34,7 +34,7 @@ async function getCourseId() {
       `;
 
     let sideItem = `
-    <div class="card card-payment  p-3">
+    <div class="card card-payment p-3">
             <div class="detail text-center">
               <img src=${detail.img} alt="" width="250px" />
               <h4 class="mt-3">${detail.title}</h4>
